@@ -1,5 +1,15 @@
-<h2>Book#index</h2>
+<h2>Book#index, Books</h2>
+<div>
+  <%= form_with url: book_search_path, method: :get, data: {controller: "search", search_target: "from", turbo_frame: "books"} do |form| %>
+  <%= form.text_field :query,
+    placeholder: "Search books by title",
+    autocomplete: "off"
+   %>
+   <%end%>
+</div>
+<div>
 <%@books.each do |book|%>
   <h3><%= book.title %></h3>
   <p><%= book.description %></p>
 <%end%>
+</div>

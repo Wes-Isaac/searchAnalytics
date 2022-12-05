@@ -28,6 +28,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem "faker"
+
+gem "pg_search"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
