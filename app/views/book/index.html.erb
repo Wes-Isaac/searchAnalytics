@@ -8,8 +8,9 @@
    <%end%>
 </div>
 <div>
-<%@books.each do |book|%>
-  <h3><%= book.title %></h3>
+<%@books.each.with_index do |book, index|%>
+  <h3><%= index %></h3>
+  <h3><%=  book.title %></h3>
   <p><%= book.description %></p>
 <%end%>
 </div>
