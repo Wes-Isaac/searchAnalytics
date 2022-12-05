@@ -1,0 +1,23 @@
+<p><%= notice %></p>
+<h2>Books</h2>
+<div>
+  <%= form_with url: book_search_path, method: :get, authenticity_token: false, data: {controller: "search", search_target: "form", turbo_frame: "books"
+  } do |form| %>
+  <%= form.text_field :query,
+    placeholder: "Search books by title",
+    autocomplete: "off",
+    data: {action: "input->search#search"}
+   %>
+   <%end%>
+</div>
+
+
+<%= turbo_frame_tag "books" do %>
+<h2>search result</h2>
+  <% books.each do |article| %>
+    <div class="article">
+      <h1><%= article.title %></h1>
+      <p><%= article.description %></p>
+    </div>
+  <% end %>
+<% end %>

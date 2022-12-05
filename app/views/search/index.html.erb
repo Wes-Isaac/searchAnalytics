@@ -1,1 +1,6 @@
-<h2>Top Searches</h2>
+<div id="searches">
+  <h1> Top 100 Searches </h1>
+  <ul id="searches-list">
+    <%= render partial: 'searches', locals: { searches: @searches } %>
+  </ul>
+</div>
