@@ -1,0 +1,8 @@
+#searches li {
+  /* list-style: none; */
+  margin: 5px 0;
+}
+
+#searches ul {
+  padding: 0;
+}
