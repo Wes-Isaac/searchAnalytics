@@ -7,17 +7,14 @@ class BookController < ApplicationController
 
   def search
     books = Book.search_by_title(params[:query])
-    # books = PgSearch.multisearch(params[:query])
-    # books = Book.where('title LIKE ?', "%#{params[:query]}%").first(100)
-   
+    if params[:query].length == 0
+      books = Book.all
+    end
 
-    # if turbo_frame_request?
       render(partial: 'books', locals: {books: books})
       check_search(params[:query], session[:user_id])
-    # else
-      # render :index
-    # end
-end
+
+  end
   
   
   private
@@ -27,10 +24,8 @@ end
 
     last_search = Search.new(book_params)
     last_search.session_id = session
-    # last_search.search_by_query(query)
     this_session = Search.where(session_id: session).last
-    # if this_session.nil? || !(this_session.search_by_query(query).length)
-    if this_session.nil? || (this_session.isPresent?(query) == 0)
+    if this_session.nil? || !this_session.isPresent?(query)
       last_search.save
     elsif this_session.query.length < query.length
       this_session.update(query: query)
