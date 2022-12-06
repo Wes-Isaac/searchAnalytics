@@ -31,6 +31,7 @@ gem "faker"
 
 gem 'fuzzy-string-match', '~> 0.9.7'
 gem "pg_search"
+gem 'rails-controller-testing'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
