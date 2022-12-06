@@ -48,11 +48,14 @@ cd seachAnalytics
 ```
 bundle install
 
-configure database.yml (username and password)
 ```
 
+configure database.yml (username and password)
+
+```
 - rails db:setup
 - rails s
+```
 
 ```
 
