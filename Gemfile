@@ -29,6 +29,7 @@ gem "jbuilder"
 
 gem "faker"
 
+gem 'fuzzy-string-match'
 
 gem "pg_search"
 # Use Redis adapter to run Action Cable in production
