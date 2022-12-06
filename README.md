@@ -1,24 +1,88 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Search Engine
 
-Things you may want to cover:
+This is a realtime searchengine.
 
-* Ruby version
+## functionality
 
-* System dependencies
+- Lists articles
+- You can search through the articles in realtime
+- Every search will be saved and the top 100 will be listed
 
-* Configuration
+## Built With
 
-* Database creation
+- Ruby
+- Ruby on Rails
+- Git
+- Postgresql
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+To get a local copy up and running follow these simple example steps.
 
-* Services (job queues, cache servers, search engines, etc.)
+- Copy Repo Link
 
-* Deployment instructions
+```
+git@github.com:Wes-Isaac/searchAnalytics.git
+```
 
-* ...
+- Get the directory that you want to clone the repository.
+
+- Open the command prompt in this directory.
+
+- Copy clone of the Repo
+
+```
+git clone git@github.com:Wes-Isaac/searchAnalytics.git
+```
+
+- Go to the repository folder in your command prompt.
+
+```
+cd seachAnalytics
+```
+
+- Install bundles
+
+```
+bundle install
+
+configure database.yml (username and password)
+```
+
+- rails db:setup
+- rails s
+
+```
+
+
+
+### Prerequisites
+
+- Ruby
+- Ruby on Rails
+- Postgresql
+## Authors
+
+## Author
+
+👤 **Yishak**
+
+- GitHub: [Yishak ,Wes-Isaac](https://github.com/Wes-Isaac)
+- LinkedIn: [@Yishak](https://www.linkedin.com/in/yishak-wesego-b404851a7/)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Wes-Isaac/searchAnalytics/issues/new).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+```
