@@ -1,0 +1,11 @@
+.center {
+  margin: auto auto;
+}
+
+.small-shadow {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.min-content {
+  width: min-content;
+}
