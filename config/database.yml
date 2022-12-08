@@ -83,7 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: serachengine
-  username: serachengine_user
-  password: Jkp7LJ1yeNADUatkxoyQ208PEBFyi6Uk
-  host: dpg-ce8ta56n6mposnliprcg-a
+  url: <%= ENV["DATABASE_URL"] %>
+  database:
+  username:
