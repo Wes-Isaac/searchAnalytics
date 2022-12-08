@@ -83,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: searchEngines_production
-  username: searchEngines
-  password: <%= ENV["SEARCHENGINES_DATABASE_PASSWORD"] %>
+  database: serachengine
+  username: serachengine_user
+  password: Jkp7LJ1yeNADUatkxoyQ208PEBFyi6Uk
+  host: dpg-ce8ta56n6mposnliprcg-a
