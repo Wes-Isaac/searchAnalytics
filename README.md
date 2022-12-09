@@ -5,8 +5,8 @@ This is a realtime searchengine.
 
 ## functionality
 
-- Lists articles
-- You can search through the articles in realtime
+- Lists books
+- You can search through the books in realtime
 - Every search will be saved and the top 100 will be listed
 
 ## Built With
