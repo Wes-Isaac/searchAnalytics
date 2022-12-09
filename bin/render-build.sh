@@ -3,7 +3,6 @@
 set -o errexit
 
 bundle install
-bundle exec rails stimulus:manifest:update
 bundle exec rails assets:precompile
 bundle exec rails assets:clean
 bundle exec rails db:migrate
